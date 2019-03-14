@@ -13,7 +13,7 @@ stack build # this step could take a while
 stack install doctest
 ```
 
-If everything goes well, the following command should be successfull:
+If everything goes well, the following command should be successful:
 
 ```
 $ stack exec -- doctest 0-intro.hs
