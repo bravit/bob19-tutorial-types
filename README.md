@@ -3,13 +3,13 @@
 
 ## Setup
 
-Please, run the following commands before comint to the course:
+Please, run the following commands before coming to this course:
 
 ```
 git clone https://github.com/bravit/bob19-tutorial-types
 cd bob19-tutorial-types
 stack setup
-stack build --fast
+stack build # this step could take a while 
 stack install doctest
 ```
 
