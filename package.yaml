@@ -1,0 +1,22 @@
+name: bobconf-types-prog
+version: 0.1
+synopsis: The tutorial on type-level programming at BobConf 2019
+description:
+        This package provides source code for the BobConf 2019 tutorial.
+
+category:            Sample Code
+license:             BSD3
+author: Vitaly Bragilevsky
+maintainer: Vitaly Bragilevsky <vit.bragilevsky@gmail.com>
+extra-source-files:
+    - stack.yaml
+    - package.yaml
+
+dependencies:
+  - base
+  - doctest
+  - servant
+
+library:
+  source-dirs:
+    - .
