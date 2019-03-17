@@ -1,0 +1,6 @@
+:set prompt "\ESC[34mghci> \ESC[m"
+:def back (\_ -> putStrLn ("\x1b[32m" ++ "Go back to the code" ++ "\x1b[0m") >> pure "")
+:def ☞ (\_ -> pure "")
+:def ☛ (\_ -> pure "")
+:def note (\_ -> pure "")
+:def section (\s -> let stars = replicate (length s + 12) '*' in putStrLn ("\n\n\x1b[31m" ++ stars ++ "\n*     " ++ s ++ "     *\n" ++ stars  ++ "\x1b[0m") >> pure "")

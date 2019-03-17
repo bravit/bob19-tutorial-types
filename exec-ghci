@@ -1,0 +1,40 @@
+#!/usr/bin/expect
+
+set filename [lindex $argv 0];
+
+log_user 0
+spawn stack exec -- ghci -ignore-dot-ghci -ghci-script settings.ghci $filename
+log_user 1
+
+set timeout 300
+
+set content [exec grep -- "-- >>>" $filename | cut -b 8-]
+set cmds [split $content "\n"]
+
+proc wait_enter {} {
+    stty -echo
+    expect_user -timeout -1 "\n"
+    stty echo
+}
+
+expect "ghci> "
+wait_enter
+
+foreach cmd $cmds {
+    send "$cmd\n"
+    expect {
+	":set" {}
+	"import" {}
+	":back" {}
+	":☞" {}
+	":☛" {}
+	"let " {}
+	":note" {}
+        ":section" {}
+	"\n" { wait_enter }
+    }
+    expect "ghci> " 
+    wait_enter
+}
+send ":quit\n"
+interact
