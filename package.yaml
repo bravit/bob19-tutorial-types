@@ -11,6 +11,11 @@ maintainer: Vitaly Bragilevsky <vit.bragilevsky@gmail.com>
 extra-source-files:
     - stack.yaml
     - package.yaml
+    - README.md
+    - exec-ghci
+    - settings.ghci
+    - doctest-all.sh
+    - plan-detailed.txt
 
 dependencies:
   - base
@@ -22,8 +27,8 @@ dependencies:
 
 executables:
   servant-simple:
-      main: 41-servant-simple.hs
+      main: code/41-servant-simple.hs
 
 library:
   source-dirs:
-    - .
+    - code

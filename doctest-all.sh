@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for filename in *.hs; do
+for filename in code/*.hs; do
     echo "Testing $filename"
     stack exec -- doctest $filename
 done
