@@ -27,13 +27,13 @@ We'll discuss the following GHC extensions and the corresponding Haskell feature
 
 ## Plan
 
-0. Introduction
+0. **Introduction**
   * terms
   * types
   * kinds
   * kinds are types (aka TypeInType)
 
-1. Various type-level Haskell features
+1. **Various type-level Haskell features**
   * phantom types
   * proxy types
   * type applications
@@ -42,20 +42,20 @@ We'll discuss the following GHC extensions and the corresponding Haskell feature
   * type-level literals (numbers, symbols, lists)
   * type operators
 
-2. Generalized algebraic datatypes (GADTs)
+2. **Generalized algebraic datatypes (GADTs)**
   * example: arithmetic expressions (from ADT to GADT)
   * example: opening and closing doors
   * an idea of types equality
   * an idea of singleton types
 
-3. Type families
+3. **Type families**
   * open type families
   * closed type families
   * data families
   * associated types (representing graphs)
   * injectivity problem
 
-4. Demystifying Servant types
+4. **Demystifying Servant types**
   * describing web service API at the type-level
   * tying request handlers to typed API
   * running an application with the `Warp` server
