@@ -117,3 +117,10 @@ ps2 = consPS "Xabcd"
 
 
 main = undefined
+
+
+-- Exercise: define datatype Id which can be used
+-- to define the following type synonyms:
+-- type UserId = Id "user"
+-- type AdminId = Id "admin"
+
