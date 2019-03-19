@@ -15,7 +15,6 @@ extra-source-files:
     - exec-ghci
     - settings.ghci
     - doctest-all.sh
-    - plan-detailed.txt
 
 dependencies:
   - base
