@@ -66,6 +66,8 @@ We'll discuss the following GHC extensions and the corresponding Haskell feature
 Please, run the following commands before coming to this course:
 
 ```
+stack upgrade
+export PATH=$HOME/.local/bin:$PATH  # (just in case...  this is where stack just installed itself)
 git clone https://github.com/bravit/bob19-tutorial-types
 cd bob19-tutorial-types
 stack setup
