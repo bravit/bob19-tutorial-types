@@ -7,6 +7,9 @@ f x = (x * 3 + 6)*2
 
 
 
+
+
+
 -- >>> :section Welcome to my GHCi!
 
 -- $
