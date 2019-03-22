@@ -1,4 +1,4 @@
-{-# LANGUAGE DataKinds #-}
+\{-# LANGUAGE DataKinds #-}
 {-# LANGUAGE TypeOperators #-}
 
 module Main where
@@ -79,3 +79,5 @@ main = run 19322 $ logStdoutDev app
 -- >>> :info Handler
 -- >>> :info ServerT
 
+-- Great description of type-level features used in Servant:
+-- https://arow.info/blog/posts/2015-07-10-servant-intro.html 
