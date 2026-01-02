@@ -46,7 +46,7 @@ inc (Pointer n) =
 ptr :: Pointer 4 -- type-level Nat literal
 ptr = Pointer 12 -- term-level Integer literal
 
--- gchi
+-- ghci
 
 
 
